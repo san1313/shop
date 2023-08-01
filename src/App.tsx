@@ -6,6 +6,7 @@ import { Route, Routes, useNavigate } from 'react-router-dom';
 import './App.css';
 import data from './data';
 import Detail from './pages/Detail';
+import Cart from './pages/Cart';
 
 export interface shoes {
   shoes: {
@@ -82,6 +83,7 @@ function App() {
           }
         />
         <Route path='/detail/:id' element={<Detail shoes={shoes} />} />
+        <Route path='/cart' element={<Cart />} />
       </Routes>
     </div>
   );
